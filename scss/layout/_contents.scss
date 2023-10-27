@@ -10,6 +10,11 @@
 		.imgBox{// 背景画像
 			width: 100%;
 			height: auto;
+			&.-dummy{
+				@include mq(tb){
+					height: 150vh;
+				}
+			}
 			&.-parallax{//パラドックス背景の場合、ここは透明画像
 				justify-content: center;
 				align-items: center;
@@ -19,9 +24,8 @@
 				background-size: cover;
 				background-repeat: no-repeat;
 				&.-parallax_bg{//ここに背景を指定する。
-					background-image: url(../images/bg/header_bg_s.jpg);
 					@include mq(tb){
-						background-image: url(../images/bg/header_bg.jpg);
+						background-image: url(../images/bg/top-content01_bg.png);
 					}
 				}
 			}
@@ -30,6 +34,76 @@
 			width: 100%;
 			position: absolute;
 			
+			&.-content-item{
+				@include mq(tb){
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 70%;
+					max-width: 1000px;
+				}
+				&_02{
+					top: 15%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					@include mq(tb){
+						width: 70%;
+						max-width: 1000px;
+					}
+				}
+			}
+			&.-kitchenTitle{
+				@include mq(tb){
+					top: 10%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+			}
+			&.-kitchenItem{
+				@include mq(tb){
+					top: 70%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+			}
+			&.-bathroomItem{
+				@include mq(tb){
+					top: 65%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+			}
+			&.-entranceItem{
+				@include mq(tb){
+					top: 70%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+			}
+			&.-content04-title,
+			&.-content05-title{
+				@include mq(tb){
+					top: 5%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+			}
+			&.-content06-title{
+				@include mq(tb){
+					top: 10%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+			}
+			&.-content06-sliderBox{
+				@include mq(sp){
+					top: 37%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+			}
+
+
 			//サイト右側中段に表示 （PCのみ）
 			&.-right-topBtn{
 				top: 2.5%;
