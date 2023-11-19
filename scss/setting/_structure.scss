@@ -10,7 +10,6 @@ $breakpoint: (
     tb-pc1600: 'screen and (min-width: 1600px)',
     tb-pc1850: 'screen and (min-width: 1850px)',
     pc: 'screen and (min-width: 1600px)'
-
 );
 @mixin mq($bp) {
     @media #{map-get($breakpoint, $bp)} {

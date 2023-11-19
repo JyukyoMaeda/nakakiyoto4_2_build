@@ -506,6 +506,52 @@ img {
   width: 100%;
   position: absolute;
 }
+.l-contents.-img-bg .l-contentsBox.-kanbai_tag {
+  top: 26%;
+  left: 25.2%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+  padding: 0.5% 0.5% 0.5% 1%;
+  margin: auto;
+  background: rgb(255, 255, 255);
+  text-align: center;
+  letter-spacing: 3px;
+  line-height: 1;
+  border: 3px double rgb(41, 41, 41);
+}
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-kanbai_tag {
+    top: 46%;
+    left: 22.5%;
+    width: 16%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .l-contents.-img-bg .l-contentsBox.-kanbai_tag {
+    width: 14%;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .l-contents.-img-bg .l-contentsBox.-kanbai_tag {
+    top: 45%;
+    left: 24%;
+    width: 12%;
+    max-width: 230px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .l-contents.-img-bg .l-contentsBox.-kanbai_tag {
+    top: 45%;
+    left: 26.5%;
+    width: 12%;
+  }
+}
+@media screen and (min-width: 1850px) {
+  .l-contents.-img-bg .l-contentsBox.-kanbai_tag {
+    left: 29.2%;
+    width: 10%;
+  }
+}
 @media screen and (min-width: 767px) {
   .l-contents.-img-bg .l-contentsBox.-content-item {
     top: 50%;
@@ -2378,6 +2424,12 @@ img {
 }
 .l-text.-black a {
   color: black;
+}
+.l-text.-red {
+  color: red;
+}
+.l-text.-red a {
+  color: red;
 }
 .l-text.-green {
   text-shadow: 1px 1px 10px rgb(236, 236, 236);

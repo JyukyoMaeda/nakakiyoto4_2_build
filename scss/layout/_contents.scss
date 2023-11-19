@@ -33,7 +33,45 @@
 		.l-contentsBox{// コンテンツ要素
 			width: 100%;
 			position: absolute;
-			
+			// 完売タグ
+			&.-kanbai_tag{
+				top: 26%;
+				left: 25.2%;
+				transform: translate(-50%, -50%);
+				width: 35%;
+				padding: 0.5% 0.5% 0.5% 1%;
+				margin: auto;
+				background: rgb(255, 255, 255);
+				text-align: center;
+				letter-spacing: 3px;
+				line-height: 1;
+				border: 3px double rgb(41, 41, 41);
+				@include mq(tb){
+					top: 46%;
+					left: 22.5%;
+					width: 16%;
+				}
+				@include mq(tb-pc1000){
+					width: 14%;
+				}
+				@include mq(tb-pc1500){
+					top: 45%;
+					left: 24%;
+    				width: 12%;
+					max-width: 230px;
+				}
+				@include mq(tb-pc1600){
+					top: 45%;
+					left: 26.5%;
+    				width: 12%;
+				}
+				@include mq(tb-pc1850){
+					left: 29.2%;
+					width: 10%;
+				}
+			}
+
+
 			&.-content-item{
 				@include mq(tb){
 					top: 50%;

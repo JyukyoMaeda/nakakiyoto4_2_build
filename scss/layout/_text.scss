@@ -475,7 +475,10 @@
         }
     }
     &.-red{
-  
+        color: red;
+        a{
+            color: red;
+        }
     }
     &.-blue{
     }
